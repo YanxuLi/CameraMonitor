@@ -70,9 +70,9 @@ dependencies {
 
 
 
-    api files('libs/EZOpenSDK.jar')
-    api files('libs/glide-3.6.1.jar')
-    api files('libs/push_v1.1.jar')
-    api files('libs/EZUIKit_1.2.jar')
+    compile files('libs/EZOpenSDK.jar')
+    compile files('libs/glide-3.6.1.jar')
+    compile files('libs/push_v1.1.jar')
+    compile files('libs/EZUIKit_1.2.jar')
 }
 
