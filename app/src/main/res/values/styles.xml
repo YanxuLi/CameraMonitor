@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--"@android:style/Theme.Light.NoTitleBar.Fullscreen"-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Theme.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <!-- 设置Toolbar菜单文字的大小  -->
+    <style name="ToolbarTheme" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@color/importance</item> <!--颜色-->
+        <item name="android:textSize">18sp</item> <!--字体大小-->
+    </style>
+
+    <!--<style name="LoadingTextView_Percent" parent="LoadingTextView">-->
+        <!--<item name="textPadding">10dp</item>-->
+        <!--<item name="textSize">15sp</item>-->
+        <!--<item name="android:text"/>-->
+    <!--</style>-->
+
+    <!--<style name="LoadingTextView">-->
+        <!--<item name="textStyle">vertical</item>-->
+        <!--<item name="textColor">@color/gray_text</item>-->
+        <!--<item name="textSize">12sp</item>-->
+        <!--<item name="textPadding">5dp</item>-->
+        <!--<item name="android:text">@string/loading_text_default</item>-->
+    <!--</style>-->
+    <style name="LoadingTextView">
+        <item name="textStyle">vertical</item>
+        <item name="textColor">@color/gray_text</item>
+        <item name="textSize">12sp</item>
+        <item name="textPadding">5dp</item>
+        <item name="android:text">@string/loading_text_default</item>
+    </style>
+    <style name="LoadingTextView_Percent" parent="LoadingTextView">
+        <item name="textPadding">10dp</item>
+        <item name="textSize">15sp</item>
+        <item name="android:text"/>
+    </style>
+
+    <style name="CommonListView" parent="@android:style/Widget.ListView">
+        <item name="android:cacheColorHint">#0000</item>
+        <item name="android:fadingEdgeLength">0dp</item>
+        <item name="android:listSelector">#0000</item>
+        <item name="android:fastScrollEnabled">false</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:divider">@null</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:footerDividersEnabled">false</item>
+    </style>
+
+</resources>

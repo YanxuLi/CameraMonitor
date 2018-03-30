@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/realplay_full_ctr_layout"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/realplay_full_play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/fullsrceen_play_btn_selector"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:id="@+id/realplay_full_sound_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/realplay_full_play_btn"
+            android:background="@drawable/fullsrceen_soundon_btn_selector"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:id="@+id/realplay_full_talk_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/realplay_full_sound_btn"
+            android:background="@drawable/fullsrceen_speech_btn_selector"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:id="@+id/realplay_full_record_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/realplay_full_talk_btn"
+            android:background="@drawable/fullsrceen_record_btn_selector"
+            android:onClick="onClick"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/realplay_full_quality_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/realplay_full_record_btn"
+            android:background="@null"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:text="@string/quality_balanced"
+            android:textColor="@color/white"
+            android:textSize="16sp"  />
+
+        <com.videogo.widget.CheckTextButton
+            android:id="@+id/gotoportrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/horizontal_shrink_screen_normal"
+            android:visibility="gone" />
+</RelativeLayout>

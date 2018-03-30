@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y30"
+    android:padding="@dimen/x5"
+    android:clickable="false"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:clickable="false"
+        android:layout_width="@dimen/x20"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/lits" />
+
+    <TextView
+        android:clickable="false"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x10"
+        android:gravity="center"
+        android:text="@string/camera_list"
+        android:textSize="18sp" />
+
+    <TextView
+        android:clickable="false"
+        android:textColor="#000"
+        android:id="@+id/camera_count"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x20"
+        android:gravity="center"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">摄像头监控</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="hint_phone">输入手机号码</string>
+    <string name="hint_password">输入密码</string>
+    <string name="hint_password_2">确认密码</string>
+    <string name="hint_register">新用户注册</string>
+    <string name="warning">我已阅读，并同意《用户协议》</string>
+    <string name="currCamera">当前屏</string>
+    <string name="next_camera">下一屏</string>
+    <string name="camera_list">摄像头列表</string>
+    <string name="exit">退出登录</string>
+    <string name="guide1">点击进入个人中心查看屏列表</string>
+    <string name="guide2">点击查看下一屏</string>
+    <string name="guide3">拖着按钮往上下左右移动即可调整摄像头方向</string>
+    <string name="open_drawer">打开抽屉</string>
+    <string name="close_drawer">关闭抽屉</string>
+    <string name="logining">正在登录...</string>
+    <string name="registering">正在注册...</string>
+    <string name="modify">修改中...</string>
+    <string name="textPhone">18825144909</string>
+    <string name="sure">确认提交</string>
+    <array name="cameras">
+        <item>sadskwfsaff</item>
+        <item>sadskwfsaff</item>
+        <item>sadskwfsaff</item>
+        <item>sadskwfsaff</item>
+        <item>sadskwfsaff</item>
+        <item>sadskwfsaff</item>
+        <item>sadskwfsaff</item>
+        <item>sadskwfsaff</item>
+        <item>sadskwfsaff</item>
+    </array>
+    <string name="realplay_set_fail_network">设置失败，请检查您的网络</string>
+    <string name="quality_balanced">均衡</string>
+    <string name="camera_lens_closed">镜头遮蔽中</string>
+    <string name="loading_text_default">加载中，请稍候</string>
+    <string name="quality_hd">高清</string>
+    <string name="quality_flunet">标清</string>
+    <string name="setting_video_level">正再设置画面质量</string>
+    <string name="touch_to_load">轻触屏幕重新加载</string>
+    <string name="no_remote_data">这一天静悄悄的，什么都没录下~</string>
+    <string name="delete">删除</string>
+    <string name="auto_play_time">%s秒钟后为你自动播放下一段视频</string>
+    <string name="play_hour">点</string>
+    <string name="more_local_image">更多本地录像</string>
+    <string name="local_video_not_delete">本地录像不支持删除</string>
+    <string name="local_play_hour">点</string>
+    <string name="am">上午</string>
+    <string name="pm">下午</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="offline">设备不在线</string>
+    <string name="ez_no_remote_data_device">没有查找到本地录像</string>
+    <string name="no_localdatas">没有查询到录像</string>
+
+    <!-- 消息-->
+    <string name="describtion" />
+    <string name="message_come_from_tip">来自：</string>
+    <string name="alarm_type_remotecontrol">发生紧急遥控按钮事件</string>
+    <string name="alarm_type_infrared">发生人体感应事件</string>
+    <string name="alarm_type_door">发生门磁报警</string>
+    <string name="alarm_type_smoke">发生烟感报警</string>
+    <string name="alarm_type_gas">发生可燃气体报警</string>
+    <string name="alarm_type_water">发生水侵报警</string>
+    <string name="alarm_type_urgent_button">发生紧急按钮报警</string>
+    <string name="alarm_type_person_alarm">发生人体感应报警</string>
+    <string name="ez_alarm_type_person_alarm">人体感应事件</string>
+    <string name="alarm_type_motion_detection">发生移动侦测报警</string>
+    <string name="alarm_type_baby_cry">发生婴儿啼哭报警</string>
+    <string name="alarm_type_unknown">发生未知类型报警</string>
+    <string name="ptz_tip">滑动改变方向</string>
+    <string name="delete_confirm">确定删除</string>
+    <string name="cancel">取消</string>
+    <string name="select_all">全选</string>
+    <string name="today">今天</string>
+    <string name="editor">编辑</string>
+    <string name="check_all_message">设为已读</string>
+    <string name="listview_footer_no_more">无更多</string>
+    <string name="no_more_alarm_tip">消息最多可保存7天</string>
+    <string name="modifypassword">修改密码</string>
+    <string name="password">密码</string>
+    <string name="username">账号</string>
+    <string name="head">头像</string>
+    <string name="personal">个人中心</string>
+    <color name="title_line">#b2b2b2</color>
+    <string name="app_updater_download_later">暂不更新</string>
+    <string name="app_updater_download_now">立即更新</string>
+    <string name="app_updater_app_market">退出</string>
+    <string name="app_updater_downloading">正在下载…</string>
+    <string name="app_updater_download_failed">下载失败：%d</string>
+    <string name="app_updater_dir_not_found">找不到下载目录 - %s</string>
+    <string name="app_updater_install">安装</string>
+    <string name="app_updater_retry">重试下载</string>
+
+</resources>

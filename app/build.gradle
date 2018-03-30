@@ -1,0 +1,79 @@
+//apply plugin: 'com.android.application'
+//apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.YanxuLi'
+android {
+    compileSdkVersion 26
+    defaultConfig {
+//        applicationId "com.media.dingping.cameramonitor"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 3
+        versionName "1.2.11019"
+        ndk {
+            abiFilters "armeabi"
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+//    signingConfigs {
+//        config {
+//            keyAlias 'android.keystor'
+//            keyPassword 'androidwinall'
+//            storeFile file('../sign/winall.keystore')
+//            storePassword 'winallandroid'
+//        }
+//    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.config
+        }
+    }
+    buildToolsVersion '26.0.2'
+}
+
+repositories {
+    flatDir {
+        dirs 'libs' //this way we can find the .aar file in libs folder
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    //rxjava
+    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+    //retrofit2
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    //屏幕适配
+    //compile 'com.zhy:autolayout:1.4.5'
+    //萤石云
+    compile files('libs/EZOpenSDK.jar')
+    //    compile ('com.squareup.retrofit2:converter-simplexml:2.3.0'){
+    //        exclude group: 'xpp3', module: 'xpp3'
+    //        exclude group: 'stax', module: 'stax-api'
+    //        exclude group: 'stax', module: 'stax'
+    //    }
+    compile files('libs/glide-3.6.1.jar')
+    compile 'com.prolificinteractive:material-calendarview:1.4.3'
+    compile files('libs/push_v1.1.jar')
+    compile files('libs/EZUIKit_1.2.jar')
+}
+

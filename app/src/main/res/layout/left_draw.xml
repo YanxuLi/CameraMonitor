@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/x260"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y10"
+        android:layout_marginTop="@dimen/y20"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/header_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:src="@mipmap/header" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/textPhone"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fgx"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/header_layout"
+        android:background="#55000000" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="@dimen/x240"
+        android:layout_height="@dimen/y250"
+        android:layout_below="@+id/fgx"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/cameras" />
+
+    <Button
+        android:id="@+id/bt_exit"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/y38"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y10"
+        android:background="@drawable/login_enabled_true"
+        android:text="@string/exit" />
+
+
+</RelativeLayout>
